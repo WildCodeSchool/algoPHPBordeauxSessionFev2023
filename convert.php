@@ -25,5 +25,42 @@ Ecrire une function ( ou programme ) qui convertit une lettre en une autre et re
     Dans tous les autres cas, renvoyer l'élément initial.
     Si l'élément reçu n'est pas un caractère alphanumérique, renvoyer "error".
 </p>
+
+<h3>Solution</h3>
+<?php
+/*
+function exchangeLetter(string $letter) {
+    if (!ctype_alnum($letter))
+        return "error";
+    elseif($letter == "A")
+        return $letter = "U";
+    elseif($letter == "T")
+        return $letter = "D";
+    elseif($letter == "X")
+        return $letter = "P";
+    elseif($letter == "K")
+        return $letter = "C";
+    else
+        return $letter;
+}
+*/
+function exchangeLetter($letter)
+{
+    switch ($lettre) {
+        case !ctype_alnum($lettre):
+            return "error";
+        case "A":
+            return "U";
+        case "T":
+            return "D";
+        case "X":
+            return "P";
+        case "K":
+            return "C";
+        default:
+            return $lettre;
+    }
+}
+?>
 </body>
 </html>
