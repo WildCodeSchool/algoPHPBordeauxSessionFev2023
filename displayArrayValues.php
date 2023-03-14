@@ -14,3 +14,5 @@ function displayArrayValues(array $tab): void
 
 displayArrayValues($tab);
 
+const SAUT_DE_LIGNE = "<br>";
+
